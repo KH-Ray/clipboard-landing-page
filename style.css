@@ -1,0 +1,305 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  color: hsl(210, 10%, 33%);
+}
+
+header h1,
+header p,
+h2,
+h2 ~ p {
+  width: 550px;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h2 + p {
+  color: hsl(201, 11%, 66%);
+  margin-top: 14px;
+  line-height: 1.5;
+}
+
+.description img,
+.heading-2 img {
+  height: 400px;
+}
+
+.btns {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.btn {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #f8f9fa;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.header-button-1,
+.bottom-button-1 {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0 3px 2px #1e9f89, 0 12px 12px #e6fcf5;
+}
+
+.header-button-2,
+.bottom-button-2 {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 0 3px 2px #5562ca;
+}
+
+/* Header Section */
+header {
+  height: 600px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(images/bg-header-desktop.png);
+  padding-top: 100px;
+}
+
+header img {
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+}
+
+header h1 {
+  margin-top: 28px;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+header p {
+  color: hsl(201, 11%, 66%);
+  margin-top: 14px;
+  line-height: 1.5;
+}
+
+/* Main Section */
+
+/* -- Heading 1 -- */
+.heading-1 {
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+  gap: 72px;
+}
+
+.description img {
+  margin-left: -100px;
+}
+
+.advantages {
+  width: 450px;
+}
+
+.advantages h3 {
+  margin-top: 32px;
+}
+
+.advantages p {
+  font-size: 14px;
+  color: hsl(201, 11%, 66%);
+  line-height: 2;
+}
+
+/* -- Heading 2 -- */
+.heading-2 {
+  margin-top: 96px;
+}
+
+.heading-2 img {
+  margin-top: 48px;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* -- Heading 3 -- */
+
+.benefits {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+.benefits div {
+  text-align: center;
+  width: 300px;
+}
+
+.benefits h3 {
+  margin-top: 32px;
+}
+
+.benefits p {
+  margin-top: 16px;
+  color: hsl(201, 11%, 66%);
+  font-size: 14px;
+  line-height: 2;
+}
+
+.brands {
+  margin-top: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 96px;
+}
+
+/* --Heading 4 -- */
+.heading-4 {
+  padding-top: 150px;
+  text-align: center;
+  height: 400px;
+}
+
+/* Footer */
+footer {
+  height: 100px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 256px;
+  background-color: #f1f3f5;
+}
+
+footer img {
+  height: 50px;
+}
+
+.bottom-links {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: auto auto;
+  column-gap: 72px;
+  row-gap: 12px;
+  font-size: 14px;
+  margin-left: -96px;
+  cursor: pointer;
+}
+
+.logos {
+  cursor: pointer;
+  display: flex;
+  gap: 18px;
+}
+
+.logos img {
+  height: 20px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 600px) {
+  header h1,
+  header p,
+  h2,
+  h2 ~ p {
+    width: 90%;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+  }
+
+  .heading-1 {
+    margin-top: 150px;
+  }
+
+  .heading-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heading-2 h2,
+  .heading-2 p {
+    margin-left: 0;
+    transform: translate(0, 0);
+  }
+
+  .description {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .advantages {
+    width: 90%;
+  }
+
+  .description img,
+  .heading-2 img {
+    height: 225px;
+    margin-left: 0;
+    transform: translate(0, 0);
+  }
+
+  .heading-3 {
+    margin-top: 100px;
+  }
+
+  .benefits {
+    margin-top: 96px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .brands {
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .btns {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .btn {
+    width: 250px;
+  }
+
+  footer {
+    height: 400px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .bottom-links {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+}
