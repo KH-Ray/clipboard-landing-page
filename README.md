@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Clipboard Landing Page's Solution URL](https://github.com/KH-Ray/clipboard-landing-page)
+- Live Site URL: [Clipboard Landing Page's Live Site URL](https://master--strong-mousse-a0d06f.netlify.app/)
 
 ## My process
 
